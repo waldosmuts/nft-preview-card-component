@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./app/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="main__card">
+      <div class="card__preview">
+        <img class="preview__img" src="./images/image-equilibrium.jpg" alt="">
+      </div>
+      <h1 class="card__title">Equilibrium #3429</h1>
+      <p class="card__desc">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="card__details">
+        <span class="details__price">0.041 ETH</span>
+        <span class="details__timer">3 days left</span>
+      </div>
+      <div class="card__divider"></div>
+      <div class="card__creator">
+        <img src="./images/image-avatar.png" alt="" class="creator__avatar">
+        <h2 class="creator__title">Creation of <span class="title__name">Jules Wyvern</span></h2>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer__attribution">
+      <span>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      </span>
+      <span>
+        Coded by <a href="https://github.com/waldosmuts">Waldo Smuts</a>.
+      </span>
+    </div>
+  </footer>
 </body>
+
 </html>
